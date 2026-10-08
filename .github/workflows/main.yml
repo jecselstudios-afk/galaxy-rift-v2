@@ -9,7 +9,7 @@ jobs:
         with:
           java-version: '25'
           distribution: 'microsoft'
-      - run: unzip -q galaxy-rift-fabric-26.2.zip
+      - run: - run: unzip -q ./*.zip
       - run: chmod +x galaxy-fabric/gradlew
       - run: ./gradlew build --stacktrace
         working-directory: galaxy-fabric
